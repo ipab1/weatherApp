@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather Search</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Get Current Temperature</h1>
+    <h3>
+      Usage: City name, state code (only for the US) and country code divided by
+      comma like Zion,VA,US.
+    </h3>
+    <form action="/weather" method="post">
+      <label
+        ><strong>Place:</strong>
+        <input
+          type="text"
+          name="place"
+          placeholder="City,State,Country"
+          required
+        />
+      </label>
+      <br /><br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Get Temperature" />
+    </form>
+  </body>
+</html>
